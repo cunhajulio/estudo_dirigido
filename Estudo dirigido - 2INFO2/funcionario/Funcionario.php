@@ -4,7 +4,7 @@ class Funcionario{
     public $departamento;
     public $salario;
     public $CPF;
-    public $Data_Entrada;
+    public $dataEntrada;
 
     public function recebe_Aumento(){
         $salario_Aumento = $this->salario + (0.1 * $this->salario);
@@ -17,7 +17,7 @@ class Funcionario{
     }
 
     public function mostra(){
-        return "O funcionário {$this->nome}, do departamento {$this->departamento}, funcionário desde {$this->dataEntrada->mostra()}, possui salário de R$ {$this->salario}";
+        return "O funcionário do departamento {$this->departamento}, funcionário desde {$this->dataEntrada->mostra()}, possui salário de R$ {$this->salario}";
     }
 
     public function __toString() {

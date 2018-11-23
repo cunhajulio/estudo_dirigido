@@ -14,11 +14,11 @@
     $Data_Entrada->mes = 12;
     $Data_Entrada->ano = 2011;
 
-    $user1->data_Entrada = $Data_Entrada;
+    $user1->dataEntrada = $Data_Entrada;
 
     $Salario_Aumento = $user1->recebe_Aumento();
     $Salario_Anual = $user1->calcula_Ganho_Anual();
-    print_r($user1);
+    print ($user1);
 
     echo $user1;
     echo "\n \n";
